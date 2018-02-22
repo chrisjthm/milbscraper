@@ -1,0 +1,1 @@
+web: FLASK_APP=web-api.py flask run
