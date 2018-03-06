@@ -18,6 +18,4 @@ def get_stats():
 		url = ppc.get_player_page_url_by_name(lastname, firstname)
 	return json.dumps(ppc.get_latest_game_data(url))
 
-if __name__ == "__main__":
-	app.run()
 
