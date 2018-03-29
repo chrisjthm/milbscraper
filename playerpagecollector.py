@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver 
 from selenium.webdriver.common.by import By 
 from selenium.webdriver.support.ui import WebDriverWait 
@@ -9,7 +10,7 @@ class PlayerPageCollector:
 
 	PLAYER_IDS = {"VLADIMIRGUERREROJR":665489, "FORRESTWHITLEY":666215}
 	base_url = 'http://www.milb.com/player/index.jsp'
-	chromedriver_path = 'chromedriver'
+	chromedriver_path = os.getcwd() + '/chromedriver'
 
 	def add_player_id(self, lastname, firstname, id):
 		player_name_key = self.get_player_name_key(lastname, firstname)
