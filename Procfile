@@ -1,1 +1,1 @@
-web: gunicorn -w 4 milbscraper:milbscraper
+web: gunicorn -w 4 app:app
