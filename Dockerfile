@@ -8,4 +8,4 @@ RUN pip install flask
 RUN pip install selenium
 EXPOSE 5000
 ENTRYPOINT ["python"]
-CMD ["web-api.py"]
+CMD ["app.py"]
