@@ -18,7 +18,6 @@ RUN chmod +x $CHROMEDRIVER_DIR/chromedriver*
 
 ENV PATH $CHROMEDRIVER_DIR/chromedriver:$PATH
 
-
 # install chrome
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
